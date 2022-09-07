@@ -1,8 +1,8 @@
-NAME		= ex02
+NAME		= ex03
 SRCS_DIR	= src/
 OBJS_DIR	= obj/
 INCS_DIR	= src/
-SRCS_F		= main.cpp  ClapTrap.cpp ScavTrap.cpp FlagTrap.cpp
+SRCS_F		= main.cpp  ClapTrap.cpp ScavTrap.cpp FlagTrap.cpp DiamondTrap.cpp
 
 SRCS		= $(addprefix $(SRCS_DIR), $(SRCS_F))
 OBJS_F		= $(patsubst %.cpp, %.o, $(SRCS_F))
@@ -12,7 +12,7 @@ DEPS		= $(addprefix $(OBJS_DIR), $(DEPS_F))
 
 CC			= clang++
 # CFLAGS		= 
-CFLAGS		= -Wall -Wextra -Werror -MMD -std=c++98
+CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

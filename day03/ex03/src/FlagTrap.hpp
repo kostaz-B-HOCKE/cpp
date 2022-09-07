@@ -20,6 +20,11 @@ public:
 
     void highFivesGuys(void);
 
+protected:
+
+	static unsigned int const	hitPoints = 100;
+	static unsigned int const	energyPoints = 100;
+	static unsigned int const	attackDamage = 30;
 
 };
 

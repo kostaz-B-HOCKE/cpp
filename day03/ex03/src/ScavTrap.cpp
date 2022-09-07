@@ -56,37 +56,3 @@ void    ScavTrap::guardGate()
 {
     std::cout << "ScavTrap is now in Gate keeper mode" << std::endl;
 }
-
-// void ScavTrap::takeDamage(unsigned int amount)
-// {
-// 	if (hit_points == 0) {
-// 		std::cout << "ClapTrap " << this->name << " is dead. RIP" << std::endl;
-// 		return;
-// 	}
-// 	if (amount < hit_points)
-// 		hit_points -= amount;
-// 	else
-// 		hit_points = 0;
-// 	std::cout << "ClapTrap " << this->name << " has taken -";
-// 	std::cout << amount << "HP of damage";
-// 	if (hit_points <= 0) {
-// 		std::cout << " and died" << std::endl;
-// 		return;
-// 	}
-// 	std:: cout << std::endl;
-// }
-
-// void    ScavTrap::beRepaired(unsigned int amount)
-// {
-// 	if (!hit_points) {
-// 		std::cout << "ClapTrap " << this->name << " is dead" << std::endl;
-// 		return;
-// 	}
-// 	if (energy_points > 0) {
-// 		std::cout << "ClapTrap " << this->name << " is repaired himself +" << amount << "HP" << std::endl;
-// 		energy_points--;
-// 		hit_points += amount;
-// 	}
-// 	else
-// 		std::cout << "ClapTrap " << this->name << " no enogh energy" << std::endl;
-// }
