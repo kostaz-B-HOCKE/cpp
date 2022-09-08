@@ -1,23 +1,20 @@
 #ifndef DOG_HPP
 #define DOG_HPP
 
-#include "Dog.hpp"
+#include "Animal.hpp"
 
-class   Dog
+class   Dog : public    Animal
 {
 
 public:
 
     Dog();
-    Dog(std::string name);
     Dog(const Dog & input);
     Dog& operator=(Dog const & rightSide);
     ~Dog();
 
-    // makeSound();
+    void    makeSound() const;
 
-protected:
-    std::string type;
 };
 
 #endif

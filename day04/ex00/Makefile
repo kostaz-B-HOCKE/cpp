@@ -2,8 +2,8 @@ NAME		= animal
 SRCS_DIR	= src/
 OBJS_DIR	= obj/
 INCS_DIR	= src/
-# SRCS_F		= main.cpp  Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp
-SRCS_F		= main.cpp  Animal.cpp Cat.cpp
+
+SRCS_F		= main.cpp  Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongDog.cpp WrongCat.cpp
 
 SRCS		= $(addprefix $(SRCS_DIR), $(SRCS_F))
 OBJS_F		= $(patsubst %.cpp, %.o, $(SRCS_F))

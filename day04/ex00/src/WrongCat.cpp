@@ -1,18 +1,18 @@
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat()
+WrongCat::WrongCat()
 {
-    this->type = "Cat";
+    this->type = "WrongCat";
     // std::cout << "Default constructor called (Cat)" << std::endl;
 }
 
-Cat::Cat(Cat const & input) : Animal(input)
+WrongCat::WrongCat(WrongCat const & input) : WrongAnimal(input)
 {
     *this = input;
     // std::cout << "Copy constructor ClapTrap called" << std::endl;
 }
 
-Cat& Cat::operator=(Cat const & rightSide)
+WrongCat& WrongCat::operator=(WrongCat const & rightSide)
 {
     // std::cout << "Allignment operator called" << std::endl;
     if (this == &rightSide)
@@ -21,12 +21,11 @@ Cat& Cat::operator=(Cat const & rightSide)
     return *this;
 }
 
-Cat::~Cat() {
+WrongCat::~WrongCat() {
     // std::cout << "Destructor called (Cat)" << std::endl;
 }
 
-void Cat::makeSound() const
+void WrongCat::makeSound() const
 {
     std::cout << "meow meow meow" << std::endl;
 }
-
