@@ -1,6 +1,6 @@
 #include "FlagTrap.hpp"
 
-FlagTrap::FlagTrap() : ClapTrap()
+FlagTrap::FlagTrap()
 {
     hit_points = 100;
     energy_points = 100;
@@ -40,6 +40,6 @@ FlagTrap& FlagTrap::operator=(const FlagTrap & rightSide)
 
 void FlagTrap::highFivesGuys(void)
 {
-    std::cout << "Buddy high five" << std::endl;
+    std::cout << "FragTrap " << this->name << " is giving high five" << std::endl;
 }
 

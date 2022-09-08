@@ -6,11 +6,10 @@
 #include <string>
 #include <cmath> 
 
-class ScavTrap : public ClapTrap
+class ScavTrap : public virtual ClapTrap
 {
 
-protected:
-	static unsigned int const	hitPoints = 100;
+    static unsigned int const	hitPoints = 100;
 	static unsigned int const	energyPoints = 50;
 	static unsigned int const	attackDamage = 20;
 

@@ -7,7 +7,7 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 
-class FlagTrap : public ClapTrap
+class FlagTrap : public virtual ClapTrap
 {
 
 public:

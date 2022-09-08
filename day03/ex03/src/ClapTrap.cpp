@@ -42,6 +42,7 @@ ClapTrap&   ClapTrap::operator=(ClapTrap const & rightSide)
 
 void	ClapTrap::attack(const std::string& target)
 {
+	// std::cout << "ClapTrap.attack" << std::endl;
     if (this->hit_points == 0) {
         std::cout << "ClapTrap " << this->name << " RIP" << std::endl;
         return ;
@@ -89,3 +90,10 @@ void	ClapTrap::takeDamage(unsigned int amount)
 	std:: cout << std::endl;
 }
 
+std::string	ClapTrap::getName() {
+	return name;
+}
+
+unsigned	ClapTrap::getDamage() {
+	return attack_damage;
+}

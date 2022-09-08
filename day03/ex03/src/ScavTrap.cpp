@@ -24,7 +24,7 @@ ScavTrap::ScavTrap(const ScavTrap& input) : ClapTrap(input)
 
 ScavTrap::~ScavTrap(void)
 {
-    std::cout << "Destructor ScavTrap called " << std::endl;
+    std::cout << "Destructor called (ScavTrap)" << std::endl;
 }
 
 ScavTrap&   ScavTrap::operator=(ScavTrap const & rightSide)
@@ -38,8 +38,9 @@ ScavTrap&   ScavTrap::operator=(ScavTrap const & rightSide)
     return *this;
 }
 
-void		ScavTrap::attack(const std::string& target) {
-	if (hit_points) {
+void    ScavTrap::attack(const std::string& target) {
+    // std::cout << "ScavTrap.attack" << std::endl;
+	if (!hit_points) {
 		std::cout << "ScavTrap " << this->name << " is dead. RIP" << std::endl;
 		return;
 	}
@@ -56,3 +57,5 @@ void    ScavTrap::guardGate()
 {
     std::cout << "ScavTrap is now in Gate keeper mode" << std::endl;
 }
+
+

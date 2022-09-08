@@ -39,7 +39,7 @@ ScavTrap&   ScavTrap::operator=(ScavTrap const & rightSide)
 }
 
 void		ScavTrap::attack(const std::string& target) {
-	if (hit_points) {
+	if (!hit_points) {
 		std::cout << "ScavTrap " << this->name << " is dead. RIP" << std::endl;
 		return;
 	}

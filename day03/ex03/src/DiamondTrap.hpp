@@ -9,12 +9,12 @@ class DiamondTrap : public ScavTrap, public FlagTrap
 {
 
 public:
-    // DiamondTrap();
+    DiamondTrap();
     DiamondTrap(std::string _name);
-    // DiamondTrap(const DiamondTrap& input);
+    DiamondTrap(const DiamondTrap& input);
     ~DiamondTrap();
 
-    // DiamondTrap&   operator=(const DiamondTrap & rightSide);
+    DiamondTrap&   operator=(const DiamondTrap & rightSide);
 
     void whoAmI();
 
